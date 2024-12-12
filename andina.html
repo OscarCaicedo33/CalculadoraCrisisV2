@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Data ANDINA</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login__content">
+                <img src="assets/img/StudioX2.png" alt="login image" class="login__img">
+                <!----------------------------- Formulario de la calculadora ---------------------------------->
+                <form action="" class="login__form">
+                    <!----------------------------------- Título ----------------------------------------------->
+                    <div>
+                        <h1 class="login__title"> 
+                            <span>Calculator</span><br>
+                        </h1>
+                        <p class="login__description">
+                            Welcome to Andean Region: Enter the data.
+                        </p>
+                    </div>
+                    <div>
+                        <label for="red-social" class="login__label">Select a social network:</label>
+                        <select required class="login__input" id="red-social">
+                            <option value="" disabled selected>Select</option>
+                            <option value="red1">X (Twitter)</option>
+                            <option value="red2">News/Blogs</option>
+                            <option value="red3">Tik Tok</option>
+                            <option value="red4">Facebook</option>
+                            <option value="red5">Instagram</option>
+                            <option value="red6">YouTube</option>
+                        </select>
+                    </div>
+                    <!----------------------------- Input para escoger las opciones ------------------------------>
+                    <div>
+                        <div class="login__inputs"> 
+                            <div>
+                                <label for="input-email" class="login__label">Does it mention any sensitive topic?</label>
+                                <select name="yesno" required class="login__input" id="tema-sensible">
+                                    <option value="" disabled selected>Select</option> <!--- Opción vacía, deshabilitada y seleccionada -->
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                  </select>
+                            </div>
+                            <!----------------------------------------------------------------------------------------->
+                            <div>
+                                <label for="input-email" class="login__label">Does it mention the brand?</label>
+                                <select name="yesno" required class="login__input" id="menciona-marca">
+                                    <option value="" disabled selected>Select</option> <!--- Opción vacía, deshabilitada y seleccionada -->
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                  </select>
+                            </div>
+                            <!----------------------------------------------------------------------------------------->
+                            <div>
+                                <label for="input-email" class="login__label">Reach</label>
+                                <input type="number" placeholder="Ingrese el número" required class="login__input" id="alcance">
+                            </div>
+                            <!----------------------------------------------------------------------------------------->
+                            <div>
+                                <label for="input-email" class="login__label">Engagement</label>
+                                <input type="number" placeholder="Ingrese el número" required class="login__input" id="engagement">
+                            </div>
+                            <!----------------------------------------------------------------------------------------->      
+                        </div>
+                    </div>
+                    <!----------------- Botones para caluclar o borrar la selección ---------------------------------------------------->
+                    <div>
+                        <div class="login__buttons">
+                            <button class="login__button">Calculate</button>
+                            <button class="login__button login__button-ghost">Delete</button>
+                        </div>
+                    </div>
+                    <!-------------------- Resultado --------------------------------------------------------------------->
+                    <div>
+                        <div class="login__buttons">
+                            <label for="input-email" class="login__label">Level of Risk:</label>
+                            <input type="text" equired class="login__input" id="resultado" class="login__label" readonly>
+                        </div>
+                        <!-- <div>
+                            <div class="login__buttons">
+                                <a href="andina.html" class="login__buttonn">ANDINA</a>
+                            </div>
+                        </div> -->
+                </form>
+            </div>
+        </div>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/andina.js"></script>
+    </body>
+    <footer>
+        <p>© 2024 All rights reserved. Oscar C & Roberto G</p>
+    </footer>
+</html>
